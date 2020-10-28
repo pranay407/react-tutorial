@@ -1,12 +1,15 @@
 import './App.css';
 import Greet from './components/Greet';
+import Message from './components/Message';
 import Welcome from './components/Welcome';
 
 
 function App() {
   return (
     <div className="App">
-      <Greet name="Pranay" age="23">
+
+      <Message></Message>
+      {/* <Greet name="Pranay" age="23">
         <button>view</button>
       </Greet>
       <Greet name="Prakash" age="60">
@@ -17,7 +20,7 @@ function App() {
       <Welcome  name="there">
         <p>props children class component</p>
         <button>click</button>
-      </Welcome>
+      </Welcome> */}
     </div>
   );
 }
