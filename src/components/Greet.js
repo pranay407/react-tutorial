@@ -10,10 +10,10 @@ import React from 'react';
 //using arrow function
 
 const Greet = (props) => {
-    
+    const {name, age} = props
     return(
         <div>
-            <h1>{props.name} age is {props.age}</h1>
+            <h1>{name} age is {age}</h1>
             {props.children}
         </div>
         
