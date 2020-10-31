@@ -21,11 +21,11 @@ class EventBind extends Component {
     render() {
         return (
             <div>
-                {this.state.message}
+                {this.state.message}<br></br>
                 {/* first way of binding by adding bind method in front of handler */}
-                 <button onClick={this.clickHandler.bind(this)} >click</button>  
+                 <button onClick={this.clickHandler.bind(this)} >click</button>  <br></br>
                 {/* 2nd way is to use arrow function, but it has some performance implication in some scenarios */}
-                <button onClick={() => this.clickHandler()} >click</button>
+                <button onClick={() => this.clickHandler()} >click</button><br></br>
                 {/* 3rd way to bind in constructor */}
                 <button onClick={this.clickHandler} >click</button>
                
