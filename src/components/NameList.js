@@ -3,8 +3,8 @@ import Person from './Person'
 
 function NameList() {
 
-    // const names = ['abc', 'def', 'ghi']
-    // const NameList = names.map(name => <div>{name}</div>)
+    const names = ['abc', 'def', 'ghi']
+    const NameList = names.map((name,index) => <div key={index}>{name}</div>)
     // return (
     //     <div>
     //        {
@@ -53,12 +53,13 @@ function NameList() {
     // ) 
     //passing props sto another component
     const students = student.map(index => (
-        <Person studentData={index} />)
+        <Person key={index.id} studentData={index} />)
     )
 
     return (
         <div>
             {students}
+            {NameList}
         </div>
 
     )
