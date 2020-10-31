@@ -5,6 +5,7 @@ import EventBind from './components/EventBind';
 import FunctionClick from './components/FunctionClick';
 import Greet from './components/Greet';
 import Message from './components/Message';
+import NameList from './components/NameList';
 import Parent from './components/Parent';
 import UserGreeting from './components/UserGreeting';
 import Welcome from './components/Welcome';
@@ -13,7 +14,8 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <UserGreeting />
+      <NameList />
+      {/* <UserGreeting /> */}
       {/* <Parent /> */}
       {/* <EventBind /> */}
       {/* <FunctionClick />
