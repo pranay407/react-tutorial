@@ -2,6 +2,7 @@ import './App.css';
 import ClassClick from './components/ClassClick';
 import Counter from './components/Counter';
 import EventBind from './components/EventBind';
+import Form from './components/Form';
 import FunctionClick from './components/FunctionClick';
 import Greet from './components/Greet';
 import Message from './components/Message';
@@ -14,7 +15,8 @@ import Welcome from './components/Welcome';
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <Form />
+      {/* <NameList /> */}
       {/* <UserGreeting /> */}
       {/* <Parent /> */}
       {/* <EventBind /> */}
